@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 34;
+        let name = 'Dedeepya'
+        console.log(a);
+        console.log(name);
+        hello();
+        function hello(){
+            console.log("Hey Dedeepya");
+        }
+        let obj={
+            x: 44,
+            y: 54,
+            z: "Deepu",
+            cusFun: function funName(myName){
+                console.log("My name is ",myName);
+            }
+        }
+        console.log(obj);
+        console.log(obj.x);
+        console.log(obj.y);
+        console.log(obj.z);
+        console.log(obj.cusFun("Deepu"));
+
+        document.addEventListener("click",function click(){
+            console.log("Clicked");
+            // alert("Hello");
+            let conf = confirm("Are you sure?");
+            console.log(conf);
+        })
+        
+        let arr = [1,2,3,4];
+        console.log(arr);
+        arr.forEach(element => {
+            console.log(element);
+        });
+
+        setTimeout(() => { //call back function
+            console.log("SET TIMEOUT");
+        }, 1000);
+        console.log("log after SET TIMEOUT");
+    </script>
+</head>
+<body>
+    <h1>I am learning JS</h1> 
+</body>
+</html>
